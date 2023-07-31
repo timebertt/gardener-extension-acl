@@ -134,8 +134,7 @@ func (e *EnvoyFilterService) CreateVPNConfigPatchFromRule(
 			"value": map[string]interface{}{
 				"name": rbacName,
 				"typed_config": map[string]interface{}{
-					"@type":       "type.googleapis.com/envoy.extensions.filters.http.rbac.v3.RBAC",
-					"stat_prefix": "envoyrbac",
+					"@type": "type.googleapis.com/envoy.extensions.filters.http.rbac.v3.RBAC",
 					"rules": map[string]interface{}{
 						"action":   "ALLOW",
 						"policies": policies,
@@ -214,8 +213,7 @@ func principalsToPatch(
 
 func typedConfigToPatch(rbacName, ruleAction, filterType string, principals []map[string]interface{}) map[string]interface{} {
 	return map[string]interface{}{
-		"@type":       "type.googleapis.com/envoy.extensions.filters." + filterType + ".rbac.v3.RBAC",
-		"stat_prefix": "envoyrbac",
+		"@type": "type.googleapis.com/envoy.extensions.filters." + filterType + ".rbac.v3.RBAC",
 		"rules": map[string]interface{}{
 			"action": strings.ToUpper(ruleAction),
 			"policies": map[string]interface{}{

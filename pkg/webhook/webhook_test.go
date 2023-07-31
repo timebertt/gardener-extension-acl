@@ -130,7 +130,6 @@ var _ = Describe("webhook unit test", func() {
 					{
 						"name": "acl-internal-source_ip",
 						"typed_config": map[string]interface{}{
-							"stat_prefix": "envoyrbac",
 							"rules": map[string]interface{}{
 								"policies": map[string]interface{}{
 									"acl-internal": map[string]interface{}{
@@ -194,7 +193,6 @@ var _ = Describe("webhook unit test", func() {
 					{
 						"name": "acl-internal-source_ip",
 						"typed_config": map[string]interface{}{
-							"stat_prefix": "envoyrbac",
 							"rules": map[string]interface{}{
 								"policies": map[string]interface{}{
 									"acl-internal": map[string]interface{}{
@@ -308,7 +306,6 @@ var _ = Describe("webhook unit test", func() {
 					{
 						"name": "acl-internal-source_ip",
 						"typed_config": map[string]interface{}{
-							"stat_prefix": "envoyrbac",
 							"rules": map[string]interface{}{
 								"policies": map[string]interface{}{
 									"acl-internal": map[string]interface{}{

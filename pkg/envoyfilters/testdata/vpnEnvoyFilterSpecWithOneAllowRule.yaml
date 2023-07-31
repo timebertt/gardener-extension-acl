@@ -45,7 +45,6 @@ configPatches:
                         name: reversed-vpn
                         string_match:
                           contains: shoot--projectname--shootname
-          stat_prefix: envoyrbac
 workloadSelector:
   labels:
     app: istio-ingressgateway

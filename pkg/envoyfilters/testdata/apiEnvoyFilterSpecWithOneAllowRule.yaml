@@ -27,7 +27,6 @@ configPatches:
               - remote_ip:
                   address_prefix: 10.96.0.0
                   prefix_len: 11
-        stat_prefix: envoyrbac
 workloadSelector:
   labels:
     app: istio-ingressgateway

@@ -21,7 +21,6 @@ spec:
         name: authorization-policies
         typed_config:
           "@type": type.googleapis.com/envoy.extensions.filters.network.rbac.v3.RBAC
-          stat_prefix: envoyrbac
           rules:
             action: DENY
             policies:
